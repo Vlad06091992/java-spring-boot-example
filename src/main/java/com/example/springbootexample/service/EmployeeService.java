@@ -24,24 +24,24 @@ public class EmployeeService implements EmployeeServiceInterface {
         return this.employeeDao.getAllEmployees();
     }
 
-//    @Override
-//    @Transactional
-//    public void saveEmployee(Employee employee) {
-//        System.out.println(employee);
-//        this.employeeDao.saveEmployee(employee);
-//    }
-//
-//    @Override
-//    @Transactional
-//    public Employee getEmployeeById(String id) {
-//        return this.employeeDao.getEmployeeById(id);
-//    }
-//
-//    @Override
-//    @Transactional
-//    public boolean deleteEmployeeById(String id)  {
-//        return this.employeeDao.deleteEmployeeById(id);
-//    }
+    @Override
+    @Transactional
+    public void saveEmployee(Employee employee) {
+        System.out.println(employee);
+        this.employeeDao.saveEmployee(employee);
+    }
+
+    @Override
+    @Transactional
+    public Employee getEmployeeById(String id) {
+        return this.employeeDao.getEmployeeById(id);
+    }
+
+    @Override
+    @Transactional
+    public boolean deleteEmployeeById(String id)  {
+        return this.employeeDao.deleteEmployeeById(id);
+    }
 
 
 }
